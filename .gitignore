@@ -1,0 +1,3 @@
+# Ignore SSL certificates
+key.pem
+cert.pem

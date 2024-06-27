@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortened</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">URL Shortened</h1>
+        <div class="alert alert-success text-center">
+            Your shortened URL is: <a href="{{ url_for('redirect_to_url', short_url=short_url) }}" target="_blank">{{ request.host_url }}{{ short_url }}</a>
+        </div>
+        <a href="/" class="btn btn-primary btn-block">Shorten Another URL</a>
+    </div>
+    <footer>
+        &copy; 2024 Juhyun
+    </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">URL Shortener</h1>
+        <form method="post" action="/">
+            <div class="form-group">
+                <label for="original_url">Enter URL to shorten:</label>
+                <input type="url" class="form-control" id="original_url" name="original_url" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Shorten URL</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 Juhyun
+    </footer>
+</body>
+</html>
