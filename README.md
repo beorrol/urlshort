@@ -36,4 +36,4 @@ Flask로 ChatGPT와 함께 만든 URL 단축기.
 
 ---
 
-© 2024 by Juhyun. All rights reserved.
+© 2024 Juhyun.
